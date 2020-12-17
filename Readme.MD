@@ -1,4 +1,4 @@
-# Follow following steps to run app locally
+# Steps to run app locally
 
 1. `npm install` (This will install the required dependencies)
 
