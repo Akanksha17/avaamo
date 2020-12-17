@@ -8,7 +8,7 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname + '/templates/home.html'));
   });
 
-app.get("/word-list", (req, res) => {
+app.get("/words", (req, res) => {
     fs.readFile('output.json', 'utf8', (err, data) => {
         if (err) {
           throw err;
