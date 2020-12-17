@@ -1,0 +1,19 @@
+{
+  "name": "avaamo",
+  "version": "1.0.0",
+  "description": "Assignment App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./index.js"
+  },
+  "author": "Akanksha Priyadarshini",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
