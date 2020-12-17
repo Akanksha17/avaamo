@@ -1,26 +1,9 @@
-
-const getSynList = (synList) => {
-    const formattedList = synList.reduce((acc, synObj) => {
-        return [
-            ...acc,
-            synObj.text
-        ]
-    }, []);
-}
-
 const extractSynForWords = (detail) => {
 
     const finalSynList = detail.reduce((acc, wordSyn) => {
-        const synObj = {
-            word: wordSyn.text
-        };
-        const synList = wordSyn.syn ? getSynList(wordSyn.syn) : [];
         return [
             ...acc,
-            {
-                ...synObj,
-                synonymns: synList
-            }
+            wordSyn.text
         ]
     }, []);
     return finalSynList;
